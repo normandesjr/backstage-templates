@@ -62,11 +62,11 @@ spec:
         copyWithoutRender:
           - .github/workflows/*
         values:
-          component_id: {{ parameters.component_id }}
-          owner: {{ parameters.owner }}
-          java_package_name: {{ parameters.java_package_name }}
-          description: {{ parameters.description }}
-          destination: {{ parameters.repoUrl | parseRepoUrl }}
+          component_id: ${{ parameters.component_id }}
+          owner: ${{ parameters.owner }}
+          java_package_name: ${{ parameters.java_package_name }}
+          description: ${{ parameters.description }}
+          destination: ${{ parameters.repoUrl | parseRepoUrl }}
 
     - id: fetch-docs
       name: Fetch Docs
