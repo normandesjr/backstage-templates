@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Algum nome
+  name: nome
   description: ALguma descricao
   annotations:
     github.com/project-slug: normandesjr/algumrepo
