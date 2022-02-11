@@ -1,0 +1,2 @@
+${{values.name}}
+${{values.java_package_name}}
