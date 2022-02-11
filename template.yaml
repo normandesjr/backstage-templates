@@ -13,15 +13,16 @@ spec:
   type: service
 
   parameters:
-    - title: Algum título simples
+    - title: Algum titulo simples
       required:
         - component_id
+        - description
         - java_package_name
       properties:
         component_id:
           title: Nome
           type: string
-          description: Nome único do componente
+          description: Nome unico do componente
           ui:field: EntityNamePicker
         java_package_name:
           title: Nome do pacote
