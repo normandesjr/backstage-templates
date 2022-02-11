@@ -15,10 +15,10 @@ spec:
   parameters:
     - title: Algum título simples
       required:
-        - name
+        - component_id
         - java_package_name
       properties:
-        name:
+        component_id:
           title: Nome
           type: string
           description: Nome único do componente
@@ -27,6 +27,10 @@ spec:
           title: Nome do pacote
           type: string
           description: Nome do pacote Java (org.example)
+        description:
+          title: Description
+          type: string
+          description: Help others understand what this website is for.
         owner:
           title: Owner
           type: string
@@ -57,9 +61,10 @@ spec:
         copyWithoutRender:
           - .github/workflows/*
         values:
-          name: ${{ parameters.name }}
+          component_id: ${{ parameters.component_id }}
           owner: ${{ parameters.owner }}
           java_package_name: ${{ parameters.java_package_name }}
+          description: ${{ parameters.description }}
 
     - id: fetch-docs
       name: Fetch Docs
