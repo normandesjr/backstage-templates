@@ -13,7 +13,7 @@ spec:
   type: service
 
   parameters:
-    - title: Algum titulo simples
+    - title: Algum tituolo simples
       required:
         - component_id
         - description
@@ -59,6 +59,8 @@ spec:
       action: fetch:template
       input:
         url: ./skeleton
+        copyWithoutRender:
+          - .github/workflows/*
         values:
           component_id: ${{ parameters.component_id }}
           owner: ${{ parameters.owner }}
