@@ -53,7 +53,7 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./template
+        url: ./skeleton
         copyWithoutRender:
           - .github/workflows/*
         values:
