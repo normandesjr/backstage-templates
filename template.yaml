@@ -60,7 +60,7 @@ spec:
       input:
         url: ./skeleton
         values:
-          component_id: {{ parameters.component_id }}
+          component_id: ${{ parameters.component_id }}
           owner: ${{ parameters.owner }}
           java_package_name: ${{ parameters.java_package_name }}
           description: ${{ parameters.description }}
